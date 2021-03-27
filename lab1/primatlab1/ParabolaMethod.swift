@@ -2,7 +2,7 @@ import Foundation
 
 func parabola(_ a: Double, _ b: Double, _ e: Double) {
     var x1 = a
-    var x2 = (b - a) / 2
+    var x2 = 5.0
     var x3 = b
     var y1 = f(x1)
     var y2 = f(x2)
