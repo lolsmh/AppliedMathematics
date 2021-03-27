@@ -41,5 +41,5 @@ func fibonacci(_ a: Double, _ b: Double, _ e: Double) {
     
     let result = (startPoint + endPoint) / 2
     
-    print("\tf(\(result)) = \(f(result)), итераций: \(iterationCounter), вызовов f(x): \(callCounter)\n")
+    print("Фибоначчи: f(\(result)) = \(f(result)), итераций: \(iterationCounter), вызовов f(x): \(callCounter)")
 }

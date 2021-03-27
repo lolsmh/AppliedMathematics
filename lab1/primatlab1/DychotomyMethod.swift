@@ -20,5 +20,5 @@ func dychotomy(_ a: Double, _ b: Double, _ e: Double) {
         mid = (endPoint + startPoint) / 2
         callCounter += 2
     }
-    print("\tf(\(mid)) = \(f(mid)), итераций: \(iterationCounter), вызовов f(x): \(callCounter)\n")
+    print("Дихотомия: \tf(\(mid)) = \(f(mid)), итераций: \(iterationCounter), вызовов f(x): \(callCounter)")
 }

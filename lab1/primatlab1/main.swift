@@ -8,5 +8,5 @@ func test(_ a: Double, _ b: Double, _ e: Double) {
     brent(a, b, e)
 }
 
-test(6, 10, 0.00001)
+test(0, 16, 0.00001)
 

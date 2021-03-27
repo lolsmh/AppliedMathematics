@@ -30,5 +30,5 @@ func goldenSection(_ a: Double, _ b: Double, _ e: Double) {
         interval = abs(endPoint - startPoint)
     }
     let result = (startPoint + endPoint) / 2
-    print("\tf(\(result)) = \(f(result)), итераций: \(iterationCounter), вызовов f(x): \(callCounter)\n")
+    print("Золотое сечение: f(\(result)) = \(f(result)), итераций: \(iterationCounter), вызовов f(x): \(callCounter)")
 }

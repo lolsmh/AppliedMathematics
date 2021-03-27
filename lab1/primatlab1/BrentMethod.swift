@@ -25,7 +25,7 @@ func brent(_ a: Double, _ b: Double, _ e: Double) {
     while true {
         iterationCounter += 1
         if (max(x - startPoint, endPoint - x) < e) {
-            print("\tf(\(x)) = \(f(x)), итераций: \(iterationCounter), вызовов f(x): \(callCounter)\n")
+            print("Брент: f(\(x)) = \(f(x)), итераций: \(iterationCounter), вызовов f(x): \(callCounter)\n")
             break
         }
         g = previousD / 2
