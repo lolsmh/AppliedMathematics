@@ -17,9 +17,7 @@ func fibonacci(_ a: Double, _ b: Double, _ e: Double) {
     var y1 = f(x1)
     var y2 = f(x2)
     var callCounter: Int = 2
-    var iterationCounter: Int = 0
-    print("Метод Фибоначчи:\n")
-    
+    var iterationCounter: Int = 0    
     while (endPoint - startPoint > e && startPoint < endPoint) {
         iterationCounter += 1
         if (y1 > y2) {
