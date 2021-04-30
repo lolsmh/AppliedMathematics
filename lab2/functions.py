@@ -4,7 +4,6 @@ import math
 import numpy
 
 def steepestDespect(f, a, e):
-    f = lambda a: eval(f1)
     counter = 0
     isWorking = True
     b = a.copy()
@@ -17,8 +16,7 @@ def steepestDespect(f, a, e):
         counter += 1
     return counter
 
-def defGradient(f1, args0, e):
-    f = lambda a: eval(f1)
+def defGradient(f, a, e):
     counter = 0
     isWorking = True
     b = a.copy()
@@ -32,8 +30,7 @@ def defGradient(f1, args0, e):
         counter += 1
     return counter
 
-def conjugateDirection(f1, a, e):
-    f = lambda a: eval(f1)
+def conjugateDirection(f, a, e):
     s = numpy.zeros((len(a), len(a)), dtype=numpy.dtype(decimal.Decimal))
     for i in range(len(a)):
         for j in range(len(a)):
@@ -54,11 +51,10 @@ def conjugateDirection(f1, a, e):
         lbm = findM(f, args2, s[0], e)
         args3 = args2 + lbm*s[0]
         s[0] = args3 - args1
-        args = args3
+        a = args3
     return counter
 
-def conjugateGradient(f1, a, e):
-    f = lambda a: eval(f1)
+def conjugateGradient(f, a, e):
     isWorking = True
     counter = 0
     p = -getGrad(f, a)
@@ -78,8 +74,7 @@ def conjugateGradient(f1, a, e):
             isWorking = False
     return counter
 
-def newton(f1, a, e):
-    f = lambda a: eval(f1)
+def newton(f, a, e):
     isWorking = True
     counter = 0
     b = a.copy()
