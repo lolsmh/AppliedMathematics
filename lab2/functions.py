@@ -9,7 +9,7 @@ def steepestDespect(f, a, e):
     isWorking = True
     b = a.copy()
     while isWorking:
-        args1 = goldenSectionForSteepestDespect(f, a, -getGrad(f, a), e)
+        b = goldenSectionForSteepestDespect(f, a, -getGrad(f, a), e)
         delta = getDelta(b, a)
         if sqrt(delta) < e and math.fabs(f(b) - f(a)) < e:
             isWorking = False
@@ -24,7 +24,7 @@ def defGradient(f1, args0, e):
     b = a.copy()
     while isWorking:
         for i in range(len(b)):
-            b[i] = a[i] - PD(f, a, i) * D(0.01)
+            b[i] = a[i] - FirstOrderEquasion(f, a, i) * D(0.01)
         delta = getDelta(a, b)
         if sqrt(delta) < e and math.fabs(f(a) - f(b)) < e:
             isWorking = False
@@ -85,7 +85,7 @@ def newton(f1, a, e):
     b = a.copy()
     while isWorking:
         for i in range(len(a)):
-            a[i] = b[i] - PD(f, b, i)/SecondOrderEquasion(f, b, i)
+            a[i] = b[i] - FirstOrderEquasion(f, b, i)/SecondOrderEquasion(f, b, i)
         if deltaArgs(b, a) < D(e**2):
             isWorking = False
         b = a.copy()
