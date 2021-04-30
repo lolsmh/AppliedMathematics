@@ -10,6 +10,6 @@
     - [Метод Брента](https://github.com/lolsmh/AppliedMathematics/blob/main/lab1/primatlab1/BrentMethod.swift)
 
 - Лабораторная работа 2
-    - [Функции]()
-    - [Построение графиков]()
-    - [Рассчет и полезности]()
+    - [Функции](https://github.com/lolsmh/AppliedMathematics/tree/main/lab2/functions.py)
+    - [Построение графиков](https://github.com/lolsmh/AppliedMathematics/tree/main/lab2/graphBuilders.py)
+    - [Рассчет и полезности](https://github.com/lolsmh/AppliedMathematics/tree/main/lab2/helpers.py)
