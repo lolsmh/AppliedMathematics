@@ -9,3 +9,7 @@
     - [Метод параболы](https://github.com/lolsmh/AppliedMathematics/blob/main/lab1/primatlab1/ParabolaMethod.swift)
     - [Метод Брента](https://github.com/lolsmh/AppliedMathematics/blob/main/lab1/primatlab1/BrentMethod.swift)
 
+- Лабораторная работа 2
+    - [Функции]()
+    - [Построение графиков]()
+    - [Рассчет и полезности]()
